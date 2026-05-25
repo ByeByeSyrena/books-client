@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night-indigo: #1e0f75;
+  --color-night-blue: #1c1dab;
+  --color-night-sky: #3785d8;
+  --color-night-mist: #adc6e5;
+
+  --color-romantic-lavender: #bf8ce1;
+  --color-romantic-pink: #e893c5;
+  --color-romantic-blush: #ebb2c3;
+
+  --color-neutral-cloud: #cbd8e8;
+
+  --color-accent-moonlight: #f6e7a1;
+}
+
+:root {
+  --app-bg:
+    linear-gradient(
+      180deg,
+      #f8f5ff 0%,
+      #eef3fa 45%,
+      #e7ecf7 100%
+    );
+  --bg: #ffffff;
+  --text: #4b5563;
+  --text-h: #111827;
+  --border: #e5e7eb;
+  --code-bg: #f3f4f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111827;
+    --text: #d1d5db;
+    --text-h: #f9fafb;
+    --border: #374151;
+    --code-bg: #1f2937;
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100svh;
+    margin: 0;
+    background: var(--app-bg);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #root {
+    min-height: 100svh;
+    background: transparent;
+  }
+
+  h1,
+  h2 {
+    color: var(--text-h);
+    font-weight: 500;
+  }
+
+  h1 {
+    margin-block: 1.25rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  code {
+    display: inline-flex;
+    border-radius: 0.25rem;
+    background: var(--code-bg);
+    padding: 0.25rem 0.5rem;
+    color: var(--text-h);
+    font-family:
+      ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      Monaco,
+      Consolas,
+      "Liberation Mono",
+      monospace;
+    font-size: 0.875rem;
+    line-height: 1.375;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      margin-block: 2rem;
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+@layer components {
+  .counter {
+    display: inline-flex;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    color: var(--text-h);
+    font-family:
+      ui-monospace,
+      SFMono-Regular,
+      Menlo,
+      Monaco,
+      Consolas,
+      "Liberation Mono",
+      monospace;
+  }
+}
