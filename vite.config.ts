@@ -10,6 +10,7 @@ export default defineConfig(async () => ({
     alias: {
       '@': '/src',
     },
+    dedupe: ['react', 'react-dom'],
   },
   plugins: [
     tanstackRouter({

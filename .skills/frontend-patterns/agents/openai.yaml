@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Patterns"
+  short_description: "Project frontend coding guardrails"
+  default_prompt: "Use $frontend-patterns to make a small frontend change that follows the project coding guardrails."

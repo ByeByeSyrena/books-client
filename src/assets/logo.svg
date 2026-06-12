@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Open book icon</title>
+  <g stroke="#9D7CFF" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <!-- book spine -->
+    <path d="M150 181V356" />
+    <path d="M150 181L178 197V367L150 356" />
+
+    <!-- bottom cover -->
+    <path d="M172 367H392" />
+    <path d="M150 356C160 356 168 361 172 367" />
+
+    <!-- pages -->
+    <path d="M172 356C198 269 250 163 309 125C313 180 300 206 300 206" />
+    <path d="M172 356C222 278 290 219 365 211C327 258 322 301 322 301" />
+    <path d="M172 356C237 321 313 294 398 322C362 336 346 360 346 360" />
+
+    <!-- inner fold -->
+    <path d="M172 356C164 356 158 361 154 370" />
+  </g>
+</svg>

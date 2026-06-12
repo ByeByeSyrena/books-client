@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/App.tsx:7
+#: src/components/catalogue/main.tsx:8
 msgid "Hello!"
 msgstr "Hello!"
 
@@ -21,22 +21,14 @@ msgstr "Hello!"
 msgid "Language"
 msgstr "Language"
 
-#: src/App.tsx:61
-msgid "Learn more"
-msgstr "Learn more"
-
-#: src/routes/__root.tsx:18
+#: src/components/shared/root-error.tsx:9
 msgid "Something went wrong"
 msgstr "Something went wrong"
 
-#: src/routes/__root.tsx:21
+#: src/components/shared/root-error.tsx:12
 msgid "The page hit an unexpected error. You can try again from here."
 msgstr "The page hit an unexpected error. You can try again from here."
 
-#: src/routes/__root.tsx:26
+#: src/components/shared/root-error.tsx:17
 msgid "Try again"
 msgstr "Try again"
-
-#: src/App.tsx:49
-msgid "Your questions, answered"
-msgstr "Your questions, answered"

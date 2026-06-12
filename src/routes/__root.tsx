@@ -1,21 +1,23 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
-import { Footer } from '@/components/shared/footer'
+import { Banner } from '@/components/shared/banner'
+import { CookiesBanner } from '@/components/shared/cookies-banner'
+import { Footer } from '@/components/shared/footer/footer'
 import { Header } from '@/components/shared/header'
-import { LanguageSwitcher } from '@/components/language-switcher'
 import { RootError } from '@/components/shared/root-error'
 
 export const Route = createRootRoute({
   component: () => (
-    <section className="flex min-h-svh flex-col">
-      <LanguageSwitcher />
+    <div className="flex flex-col">
+      <Banner />
       <Header />
-      <main className="flex-1">
+      <main className="flex flex min-h-[calc(100svh-68px)] flex-col flex-col">
         <Outlet />
       </main>
       <Footer />
+      <CookiesBanner />
       <TanStackRouterDevtools />
-    </section>
+    </div>
   ),
   errorComponent: RootError,
 })

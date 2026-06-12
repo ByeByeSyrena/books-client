@@ -25,3 +25,7 @@ dist-ssr
 
 .env*
 !.env.example
+
+# Local reference files for Codex
+references/*
+!references/.gitkeep

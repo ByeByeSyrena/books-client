@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/App.tsx:7
+#: src/components/catalogue/main.tsx:8
 msgid "Hello!"
 msgstr "Привіт!"
 
@@ -21,22 +21,14 @@ msgstr "Привіт!"
 msgid "Language"
 msgstr "Мова"
 
-#: src/App.tsx:61
-msgid "Learn more"
-msgstr "Дізнатися більше"
-
-#: src/routes/__root.tsx:18
+#: src/components/shared/root-error.tsx:9
 msgid "Something went wrong"
 msgstr "Щось пішло не так"
 
-#: src/routes/__root.tsx:21
+#: src/components/shared/root-error.tsx:12
 msgid "The page hit an unexpected error. You can try again from here."
 msgstr "На сторінці сталася неочікувана помилка. Спробуйте ще раз."
 
-#: src/routes/__root.tsx:26
+#: src/components/shared/root-error.tsx:17
 msgid "Try again"
 msgstr "Спробувати ще раз"
-
-#: src/App.tsx:49
-msgid "Your questions, answered"
-msgstr "Відповіді на ваші запитання"
